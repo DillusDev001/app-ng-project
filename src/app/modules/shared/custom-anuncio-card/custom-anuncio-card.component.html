@@ -1,0 +1,59 @@
+<div [class]="classMain"
+    class="flex flex-col gap-6 p-8 rounded-lg border shadow-lg w-full h-max cursor-pointer"
+    (mouseenter) ="mouseHover() "  (mouseleave) ="mouseLeave()">
+
+    <div class="w-12 h-12 rounded-lg border overflow-hidden">
+        <img [src]="anuncio.empresa.img" alt="">
+    </div>
+
+    <!-- Title -->
+    <p [class]="classTitle" class="text-2xl font-bold">{{ anuncio.nombre }}</p>
+
+    <!-- Ubicacion -->
+    <div class="flex gap-4 w-full h-8">
+        <div [class]="classUbicacionDiv" class="flex w-max h-full py-1 px-3 items-center rounded-full">
+            <p [class]="classUbicacionP" class="text-xs font-light">{{ anuncio.contrato}}</p>
+        </div>
+
+        <div [class]="classUbicacionDiv" class="flex w-max h-full py-1 px-3 items-center rounded-full">
+            <p [class]="classUbicacionP" class="text-xs font-light">{{ anuncio.categoria}}</p>
+        </div>
+
+        <div [class]="classUbicacionDiv" class="flex w-max h-full py-1 px-3 items-center rounded-full">
+            <p [class]="classUbicacionP" class="text-xs font-light">{{ anuncio.ubicacion}}</p>
+        </div>
+    </div>
+
+    <!-- Descripcion -->
+    <p [class]="classDescripcion" class="line-clamp-2 w-full text-base font-light">{{ anuncio.descripcion }}</p>
+
+    <!-- Modalidad -->
+    <div class="flex gap-4">
+        <div class="flex gap-2 items-center">
+            <app-custom-icon
+            [icon]="'fa solid fa-location-dot'"
+            [class]="classModalidadIcon" >
+            </app-custom-icon>
+            <p [class]="classModalidadP" class="text-sm">{{ anuncio.modalidad }}</p>
+        </div>
+
+        <div class="flex gap-2 items-center">
+            <app-custom-icon
+            [icon]="'fa-regular fa-clock'"
+            [class]="classModalidadIcon" >
+            </app-custom-icon>
+            <p [class]="classModalidadP">{{ publicado }}</p>
+        </div>
+    </div>
+
+    <!-- Action -->
+    <button 
+        [id]="anuncio.id_anuncio"
+        [class]="classAction"
+        class="w-max h-8 font-medium text-sm px-8 py-1 rounded-full"
+        type="button" >
+        <p [class]="classActionP" class="w-full">Aplicar</p>
+    </button>
+
+
+</div>

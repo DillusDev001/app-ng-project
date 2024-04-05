@@ -1,0 +1,63 @@
+<div class="flex flex-col w-full p-4 gap-10 h-max bg-gray-700 justify-center">
+    
+    <div class="flex gap-7 justify-center">
+        <app-custom-icon
+            [icon]="'fa-brands fa-facebook fa-2xl'"
+            [class]="'text-color-text-gray'">
+        </app-custom-icon>
+
+        <app-custom-icon
+            [icon]="'fa-brands fa-instagram fa-2xl'"
+            [class]="'text-color-text-gray'">
+        </app-custom-icon>
+
+        <app-custom-icon
+            [icon]="'fa-brands fa-telegram fa-2xl'"
+            [class]="'text-color-text-gray'">
+        </app-custom-icon>
+
+        <app-custom-icon
+            [icon]="'fa-brands fa-whatsapp fa-2xl'"
+            [class]="'text-color-text-gray'">
+        </app-custom-icon>
+    </div>
+
+    <div class="flex justify-center divide-x">
+        <app-custom-menu-button
+            [id]="'id_btn_inicio'"
+            [label]="'Inicio'"
+            [icon]="''"
+            [submenu]="true"
+            [selected]="''" >
+        </app-custom-menu-button>
+
+        <app-custom-menu-button
+            [id]="'id_btn_categoria'"
+            [label]="'Empleos'"
+            [icon]="''"
+            [submenu]="true"
+            [selected]="''" >
+        </app-custom-menu-button>
+
+        <app-custom-menu-button
+            [id]="'id_btn_explorar'"
+            [label]="'Empresas'"
+            [icon]="''"
+            [submenu]="true"
+            [selected]="''" >
+        </app-custom-menu-button>
+
+        <app-custom-menu-button
+            [id]="'id_btn_nosotros'"
+            [label]="'Nosotros'"
+            [icon]="''"
+            [submenu]="true"
+            [selected]="''" >
+        </app-custom-menu-button>
+    </div>
+
+</div>
+
+<div class="bg-primary-600 w-full text-white text-xs text-center p-2">
+    <p>Copyright © 2024-2024 Find Job    Todos los Derechos Reservados.</p>
+</div>

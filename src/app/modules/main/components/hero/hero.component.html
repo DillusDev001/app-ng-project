@@ -1,0 +1,39 @@
+<div class="flex gap-4 text-gray-600 body-font bg-primary-600 h-1/2 py-16 px-24">
+    <div class="flex flex-col gap-9 w-3/5 h-full justify-center">
+        <div class="w-full h-full">
+            <p class="w-full text-7xl tracking-wide leading-tight text-white uppercase font-semibold">Consigue un nuevo empleo y da el siguiente paso en tu carrera.</p>
+        </div>
+
+        <div class="flex gap-4 w-full">
+            <app-custom-input
+                [id]="'id_input_key_word'"
+                [label]="'Empleo o palabra clave'"
+                [control]="formBusqueda.controls.password"
+                [type]="''"
+                [autocomplete]="''"
+                [class]="'bg-white rounded-lg'"
+                [icon]="''" >
+            </app-custom-input>
+
+            <app-custom-drop-box
+                [id]="'id_drop_box_ciudad'"
+                [label]="'Ciudad...'"
+                [control]="formBusqueda.controls.value"
+                [class]="'w-44'"
+                [data]="dataCiudad" >
+            </app-custom-drop-box>
+
+            <app-custom-button
+                [id] ="'id_button_buscar'"
+                [label] ="'Buscar'"
+                [type] ="'cancel'"
+                [icon] ="''"
+                [class] ="'h-full w-32 bg-orange-500 text-white text-xl'"
+                [valid] ="true" >
+            </app-custom-button>
+
+        </div>
+    </div>
+
+    <div class="w-2/5 bg-no-repeat bg-center bg-cover" style="background-image: url(./../../../../../assets/hero.png);"></div>
+</div>
