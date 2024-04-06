@@ -37,6 +37,15 @@
                 [selected]="menuSelected"
                 (click)="onClickSetMenuSelected('Nosotros')"  >
             </app-custom-menu-button>
+
+            <app-custom-menu-button
+                [id]="'id_btn_ubicacion'"
+                [label]="'Ubicación'"
+                [icon]="''"
+                [submenu]="true"
+                [selected]="menuSelected"
+                (click)="onClickSetMenuSelected('Ubicación')"  >
+            </app-custom-menu-button>
         </div>
     </div>
     <div class="flex gap-4 items-center">

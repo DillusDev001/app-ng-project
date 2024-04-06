@@ -18,9 +18,14 @@ export function goForGotPassword(router: Router) {
     router.navigate(['auth/forgot']);
 }
 
-// ================ AUTH ================ //
+// ================ EMPRESA ================ //
 export function goEmpresaLista(router: Router) {
     router.navigate(['main/empresa/lista']);
+}
+
+// ================ ASPIRANTE ================ //
+export function goAspiranteLista(router: Router) {
+    router.navigate(['main/aspirante/lista']);
 }
 
 

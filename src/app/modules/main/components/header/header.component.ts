@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { initFlowbite } from 'flowbite';
-import { goEmpresaLista, goLogin, goMainInicio } from 'src/app/shared/utils/local.router';
+import { goAspiranteLista, goEmpresaLista, goLogin, goMainInicio } from 'src/app/shared/utils/local.router';
 import { localStorageLogOut } from 'src/app/shared/utils/local.storage';
 
 @Component({
@@ -47,6 +47,8 @@ export class HeaderComponent {
         break;
 
       case 'Empresas': goEmpresaLista(this.router); break;
+
+      case 'Empleos': goAspiranteLista(this.router); break;
     }
 
     this.open = false;
